@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the Shopify Competitor Inspector browser extension.">
+  <title>Privacy Policy · Shopify Competitor Inspector</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; color: #182b23; background: #f3f7f4; }
+    body { margin: 0; padding: 48px 20px; }
+    main { max-width: 740px; margin: auto; background: white; padding: clamp(24px, 5vw, 56px); border: 1px solid #dce6df; border-radius: 20px; }
+    .brand { color: #0b6b3a; font-weight: 650; }
+    h1 { font-size: clamp(32px, 6vw, 44px); line-height: 1.1; margin: 24px 0 12px; }
+    h2 { font-size: 21px; margin-top: 32px; }
+    p, li { line-height: 1.7; } li { margin-bottom: 8px; }
+    a { color: #0b6b3a; overflow-wrap: anywhere; }
+    .notice { border-left: 3px solid #0b6b3a; padding: 12px 18px; background: #eef7f0; }
+    footer { border-top: 1px solid #dce6df; margin-top: 36px; padding-top: 16px; font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="brand">Shopify Competitor Inspector</div>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: September 30, 2026 · Extension version 0.1.0</p>
+  <p class="notice">Analysis and saved competitor records stay in your browser. The extension has no developer-operated backend, account system, analytics, advertising, or tracking service.</p>
+  <h2>Information the extension reads</h2>
+  <p>On HTTP and HTTPS pages, the extension reads page markup, inline script text, resource addresses, and the page address to identify Shopify storefronts and update its toolbar badge. When you open the inspector, it uses the current page to display store details, theme information, public product details and prices, app signals, marketing signals, and SEO metadata. It does not use the browser history API or create a record of every page you visit.</p>
+  <p>Page markup may contain information beyond the displayed inspection fields. It is processed in your browser and is not uploaded to the developer. The extension does not intentionally extract passwords, payment details, or personal messages.</p>
+  <h2>Information saved on your device</h2>
+  <p>When you choose “Save Competitor”, the extension saves the following in <code>chrome.storage.local</code>:</p>
+  <ul>
+    <li>The save time, store domain and name, and detected theme name.</li>
+    <li>The product title and page URL, prices, currency, and counts of variants and images, when available.</li>
+    <li>Detected app names and the page's SEO title and description.</li>
+  </ul>
+  <p>The extension also remembers whether you dismissed its toolbar pin reminder. Saved records are not synchronized through Chrome storage sync. An inspection result is held temporarily in the current page's memory and is replaced when a different URL is inspected, refreshed, or the page is unloaded.</p>
+  <h2>Requests to the store you visit</h2>
+  <p>When you inspect a product page, the extension may request the public product JSON endpoint on that same store origin. This request includes normal browser connection information and may include existing cookies or authentication credentials for that store. The store may receive your IP address, requested product path, and normal browser request headers. The store handles those requests under its own privacy policy.</p>
+  <p>The extension does not send inspection results or saved competitor records to the developer or an analytics service. Links you choose to open, including product pages and the Shopify Theme Store, navigate to the selected website under that website's policies.</p>
+  <h2>Exporting and deleting data</h2>
+  <p>“Export CSV” creates a file on your device containing your saved competitors. “Delete” removes an individual saved record. Settings → “Clear local data” removes saved records and the stored pin reminder preference. Uninstalling the extension removes its extension storage. Exported CSV files remain wherever you saved them until you delete them yourself. Saved records have no automatic expiry.</p>
+  <p>Browser local storage is managed by your browser and device. The extension does not add its own encryption to saved records or exported files.</p>
+  <h2>Use and sharing</h2>
+  <p>Information is used only to inspect storefronts, display results, and save or export the competitors you select. We do not sell data, use it for advertising or credit decisions, or provide the developer with access to your locally stored records.</p>
+  <p>Shopify Competitor Inspector complies with the Chrome Web Store User Data Policy and its Limited Use requirements. Data access and use are limited to the extension's described storefront inspection features.</p>
+  <h2>This policy page and support</h2>
+  <p>This page contains no analytics, external scripts, fonts, or tracking pixels. Its hosting provider may process standard web access logs when you visit it. If you contact the project through GitHub, GitHub processes information you submit under its own privacy policy. Public issues are visible to others; do not include sensitive information.</p>
+  <p>Questions about this policy can be sent to <a href="mailto:dingjiayi.dev@gmail.com">dingjiayi.dev@gmail.com</a> or raised through the <a href="https://github.com/dingjiayi/shopify-competitor-inspector-support/issues">public support issue tracker</a>.</p>
+  <h2>Changes to this policy</h2>
+  <p>Changes to data handling will be reflected on this page and in the store disclosures. The date above identifies the latest revision.</p>
+  <footer>This independent extension is not affiliated with or endorsed by Shopify.</footer>
+</main>
+</body>
+</html>
